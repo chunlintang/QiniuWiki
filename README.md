@@ -42,4 +42,4 @@ public function qiniuFetch($url)
         return Config::get('app.qiniu.domain') . $result['key'];
 }
 ```
-<p style="color:red">＊注：对于一些音频文件需做转码处理</p>
+＊注：对于一些音频文件需做转码处理
