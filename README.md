@@ -10,6 +10,7 @@ Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
 ```
 (2),代码示例
 ```
+// 七牛配置
 > app.config
 'qiniu' => [
         'bucket' => 'mybucket',
@@ -17,7 +18,11 @@ Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
         'AccessKey' => '', //your AccessKey
         'domain' => '', //your domain
     ],
-
+/**
+*  获取远程文件的地址$url,从远程拉取下载上传到七牛
+*  @params $url
+*  @return string
+*/
 public function qiniuFetch($url)
 {
         $encodedURL = str_replace(array('+', '/'), array('-', '_'), base64_encode($url));
