@@ -16,7 +16,7 @@ Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
         'bucket' => 'mybucket',
         'SecretKey' => '', //your SecretKey
         'AccessKey' => '', //your AccessKey
-        'domain' => '', //your domain
+        'domain' => '', //your Host
     ],
 /**
 *  获取远程文件的地址$url,从远程拉取下载上传到七牛
