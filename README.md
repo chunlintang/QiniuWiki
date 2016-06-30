@@ -10,6 +10,14 @@ Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
 ```
 (2),代码示例
 ```
+> app.config
+'qiniu' => [
+        'bucket' => 'mybucket',
+        'SecretKey' => '', //your SecretKey
+        'AccessKey' => '', //your AccessKey
+        'domain' => '', //your domain
+    ],
+
 public function qiniuFetch($url)
 {
         $encodedURL = str_replace(array('+', '/'), array('-', '_'), base64_encode($url));
