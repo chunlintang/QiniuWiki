@@ -54,8 +54,9 @@ while ($active && $mrc == CURLM_OK) {
             curl_close($curl[$k]);
         }
 curl_multi_close($handle);
-
-// 将下载的本地文件上传到七牛云
+```
+(2),将下载的本地文件上传到七牛云
+```
 $filenames = scandir($dir);
 foreach ($filenames as $k => $v) {
         if ($v != "." && $v != "..") {
