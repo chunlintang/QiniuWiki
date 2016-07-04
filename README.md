@@ -1,4 +1,14 @@
 ### ###七牛云上传本地图片到私有空间
+
+// 七牛配置
+> app.config
+'qiniu' => [
+        'bucket' => 'mybucket',
+        'SecretKey' => '', //your SecretKey
+        'AccessKey' => '', //your AccessKey
+        'domain' => '', //your Host
+ ],
+
 (1),将远程文件下载到本地
 ```
 $urls = [
@@ -61,9 +71,9 @@ $filenames = scandir($dir);
 foreach ($filenames as $k => $v) {
         if ($v != "." && $v != "..") {
                 // 需要填写 Access Key 和 Secret Key
-                $accessKey = '';
-                $secretKey = '';
-                $domain = '';
+                $accessKey = Config::get('app.qiniu.AccessKey');
+                $secretKey = Config::get('app.qiniu.SecretKey');
+                $domain = Config::get('app.qiniu.domain');
                 // 构建鉴权对象
                 $auth = new \Qiniu\Auth($accessKey, $secretKey);
                 // 要上传的空间
@@ -102,14 +112,6 @@ Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
 ```
 (2),代码示例
 ```
-// 七牛配置
-> app.config
-'qiniu' => [
-        'bucket' => 'mybucket',
-        'SecretKey' => '', //your SecretKey
-        'AccessKey' => '', //your AccessKey
-        'domain' => '', //your Host
-    ],
 /**
 *  获取远程文件的地址$url,从远程拉取下载上传到七牛
 *  @params $url
