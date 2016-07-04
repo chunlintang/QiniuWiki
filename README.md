@@ -1,3 +1,4 @@
+![七牛云](http://7xvqs0.com2.z0.glb.qiniucdn.com/552720f1ec423_350_262.jpg)
 // 七牛配置文件app.config
 ```
 'qiniu' => [
