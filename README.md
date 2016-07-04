@@ -1,14 +1,14 @@
-### ###七牛云上传本地图片到私有空间
-
-// 七牛配置
-> app.config
+// 七牛配置文件app.config
+```
 'qiniu' => [
         'bucket' => 'mybucket',
         'SecretKey' => '', //your SecretKey
         'AccessKey' => '', //your AccessKey
         'domain' => '', //your Host
  ],
+```
 
+### ###七牛云上传本地图片到私有空间
 (1),将远程文件下载到本地
 ```
 $urls = [
