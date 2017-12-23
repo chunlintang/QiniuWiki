@@ -1,1 +1,1 @@
-This is a Wiki for some note.
+学习笔记记录.
