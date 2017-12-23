@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c302283d-e4ae-4955-ad2d-b21b46cdcac0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/golang/read-build-web-application-with-golang/001.md" afterPath="$PROJECT_DIR$/golang/read-build-web-application-with-golang/001.md" />
-    </list>
+    <list default="true" id="c302283d-e4ae-4955-ad2d-b21b46cdcac0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
         <entry file="file://$PROJECT_DIR$/golang/read-build-web-application-with-golang/001.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="527">
-                <caret line="247" column="11" lean-forward="false" selection-start-line="247" selection-start-column="11" selection-end-line="247" selection-end-column="11" />
+              <first_editor relative-caret-position="215">
+                <caret line="234" column="21" lean-forward="true" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
                 <folding>
                   <marker date="1513992723000" expanded="false" signature="1195:1208" ph="..." />
                   <marker date="1513992723000" expanded="true" signature="1216:1284" ph="(...)" />
@@ -216,8 +214,8 @@
     <entry file="file://$PROJECT_DIR$/golang/read-build-web-application-with-golang/001.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="527">
-            <caret line="247" column="11" lean-forward="false" selection-start-line="247" selection-start-column="11" selection-end-line="247" selection-end-column="11" />
+          <first_editor relative-caret-position="215">
+            <caret line="234" column="21" lean-forward="true" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
             <folding>
               <marker date="1513992723000" expanded="false" signature="1195:1208" ph="..." />
               <marker date="1513992723000" expanded="true" signature="1216:1284" ph="(...)" />
