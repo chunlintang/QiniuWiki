@@ -1,7 +1,5 @@
-![七牛云](http://7xvqs0.com2.z0.glb.qiniucdn.com/552720f1ec423_350_262.jpg)
-
 // 七牛配置文件app.config
-```
+```php
 'qiniu' => [
         'bucket' => 'mybucket',
         'SecretKey' => '', //your SecretKey
@@ -12,7 +10,7 @@
 
 ### ###七牛云上传本地图片到私有空间
 (1),将远程文件下载到本地
-```
+```php
 $urls = [
         'https://www.mantis.me/uploads/1.jpg',
         'https://www.mantis.me/uploads/2.jpg',
@@ -22,7 +20,7 @@ $urls = [
 ]
 ```
 //创建本地文件夹
-```
+```php
 $dir = "/uploads";
 mkdir($dir);
 $curl = $text = array();
@@ -68,7 +66,7 @@ while ($active && $mrc == CURLM_OK) {
 curl_multi_close($handle);
 ```
 (2),将下载的本地文件上传到七牛云
-```
+```php
 $filenames = scandir($dir);
 foreach ($filenames as $k => $v) {
         if ($v != "." && $v != "..") {
@@ -113,7 +111,7 @@ Accept: */*
 Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...
 ```
 (2),代码示例
-```
+```php
 /**
 *  获取远程文件的地址$url,从远程拉取下载上传到七牛
 *  @params $url
