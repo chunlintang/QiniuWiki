@@ -208,14 +208,14 @@ update A inner join B on A.id = B.id set A.c1 = B.c1,A.c2 = B.c2 where ...
 
 > 交叉连接
 
-```
+```sql
 select * from A,B(,C);
 select * from A cross join B (cross join C);
 ```
 
 > 内连接何以缩写为join
 
-```
+```sql
 select * from A,B where A.id = B.id;
 select * from A inner join B on A.id = B.id;
 ```
@@ -226,7 +226,7 @@ left join以左表为主，查询出左表再匹配右表，right join则相反
 
 > 联合查询
 
-```
+```sql
 select * from A union select * from B union ...
 ```
 
@@ -234,7 +234,7 @@ select * from A union select * from B union ...
 
 mysql不支持全连接；可以使用left join和union和right join联合使用
 
-```
+```sql
 select * from A left join B on A.id = B.id union select * from A right join B on A.id = B.id;
 ```
 
@@ -242,6 +242,6 @@ select * from A left join B on A.id = B.id union select * from A right join B on
 
 使用一条语句的结果作为另一条查询语句的条件
 
-```
+```sql
 select * from A where id in (select id from B);
 ```
