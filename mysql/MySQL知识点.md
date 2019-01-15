@@ -245,3 +245,5 @@ select * from A left join B on A.id = B.id union select * from A right join B on
 ```sql
 select * from A where id in (select id from B);
 ```
+
+[巧用这19条MySQL优化，效率至少提高3倍](https://mp.weixin.qq.com/s/B9X3W38HgIol-45dfH5qTQ?spm=a2c4e.11153940.blogcont684044.7.39d825e9NoQgFi)
